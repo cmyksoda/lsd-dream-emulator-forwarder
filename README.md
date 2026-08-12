@@ -1,4 +1,4 @@
-# LSD Dream Emulator Channel Forwarder
+# LSD Dream Emulator Forwarder Channel
 
 A Wii channel that boots straight into **LSD: Dream Emulator** through WiiStation.
 
