@@ -1,0 +1,13 @@
+Put your own dump of LSD: Dream Emulator here, patched with the English
+translation if you want it. Both files go in this folder:
+
+    LSD.bin
+    LSD.cue
+
+The .cue is what WiiStation lists, not the .bin.
+
+The channel autoboots by matching the substring "LSD", case-insensitively,
+against the filenames it scans -- so the name only has to *contain* LSD.
+Any other .cue in this folder that also contains "LSD" may win the match.
+
+You can delete this file once the game is in place.

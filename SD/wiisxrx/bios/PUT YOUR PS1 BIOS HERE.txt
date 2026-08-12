@@ -1,0 +1,13 @@
+WiiStation needs a real PlayStation BIOS image in this folder. It is Sony
+copyright, so it cannot ship with this channel -- dump it from your own console.
+
+WiiStation probes for these filenames:
+
+    SCPH1000.BIN  SCPH1001.BIN  SCPH1002.BIN
+    SCPH5500.BIN  SCPH5501.BIN  SCPH5502.BIN
+
+With this folder empty the channel still boots and still autoboots, and then
+dies loading the ROM with "Invalid read from 0x1fc80000". HLE is offered in
+WiiStation's menu but several paths expect a genuine image.
+
+You can delete this file once the BIOS is in place.

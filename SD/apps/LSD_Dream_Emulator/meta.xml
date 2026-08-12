@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <app version="2">
+   <name>LSD Dream Emulator</name>
+   <coder>Osamu Sato</coder>
+   <version>1.0</version>
+   <release_date>19981022</release_date>
+   <short_description>Exploration-adventure game</short_description>
+   <long_description>
+Full English Translation for LSD - Dream Emulator (PS1)
+
+This is an English translation patch for the game LSD - Dream Emulator created by Mr.Nobody &amp; Arcanearia.
+
+The translation covers all of the 48 text-dreams (most of them based in the dream journal 'Lovely Sweet Dream') and the main menu.
+
+Text dreams were based also on the english translation of Badcafe, Puptoon, Chia and other collaborators from the LSD: Dream Emulator Wiki website.
+
+Emulator Features:
+- 240p support!
+- Posibility of enabling/disabling Interlaced (480i) mode, Bilinear/Trap/Deflicker filters.
+- Memory Card enabling/disabling support.
+- Multiple languages support.
+- GameCube Controller support.
+- Wii U Pro Controller support.
+- Wii U GamePad Controller support through WiiVC injects.
+- Wii Classic Controller and Pro support.
+- Nintendo Classic Mini Controllers support (NES / SNES).
+   </long_description>
+   <arguments>
+     <arg>sd:/wiisxrx/isos</arg>
+     <arg>LSD</arg>
+   </arguments>
+   <ahb_access/>
+ </app>

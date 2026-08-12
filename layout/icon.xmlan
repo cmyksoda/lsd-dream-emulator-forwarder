@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+		<xmlan version="2.1.12BETA" brlan_version="0008">
+			<pai1 framesize="270" flags="01">
+				<pane name="Bg1Picture" type="0">
+					<tag type="RLVC">
+						<entry type1="0" type2="16">
+							<triplet>
+								<frame>0.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>15.000000000000000</frame>
+								<value>255.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>75.000000000000000</frame>
+								<value>255.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>90.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>270.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+						</entry>
+					</tag>
+				</pane>
+				<pane name="Bg2Picture" type="0">
+					<tag type="RLVC">
+						<entry type1="0" type2="16">
+							<triplet>
+								<frame>0.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>90.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>105.000000000000000</frame>
+								<value>255.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>165.000000000000000</frame>
+								<value>255.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>180.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>270.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+						</entry>
+					</tag>
+				</pane>
+				<pane name="Bg3Picture" type="0">
+					<tag type="RLVC">
+						<entry type1="0" type2="16">
+							<triplet>
+								<frame>0.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>180.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>195.000000000000000</frame>
+								<value>255.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>255.000000000000000</frame>
+								<value>255.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+							<triplet>
+								<frame>270.000000000000000</frame>
+								<value>0.000000000000000</value>
+								<blend>0.000000000000000</blend>
+							</triplet>
+						</entry>
+					</tag>
+				</pane>
+			</pai1>
+		</xmlan>

@@ -1,0 +1,18 @@
+# build output and scratch
+build/out/
+build/extracted/
+build/.venv/
+__pycache__/
+*.pyc
+
+# the SD-card files that cannot be redistributed
+SD/wiisxrx/bios/*.BIN
+SD/wiisxrx/bios/*.bin
+SD/wiisxrx/isos/*.bin
+SD/wiisxrx/isos/*.cue
+SD/wiisxrx/saves/*.mcd
+SD/wiisxrx/savestates/*
+!SD/wiisxrx/savestates/.gitkeep
+
+*.bak
+*.zip
