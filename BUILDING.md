@@ -8,23 +8,30 @@ straight into LSD: Dream Emulator through WiiStation.
 ```
 > **About this file.** It is the build and modification log for the channel, and
 > it doubles as the GPL "what was changed" record for the FCE Ultra GX
-> components. Paths in it (`images/`, `audio/`, `apps/`,
-> `mGBA-GX-Channel-Forwarder-Project/`) are from the working tree it was written
-> in; in this repository the same assets live in `icon/`, `banner/`, `splash/`,
-> `audio/` and `SD/apps/`.
+> components. Some prose below still names paths from the working tree it was
+> written in (`images/channel/…`, `apps/`, `mGBA-GX-Channel-Forwarder-Project/`);
+> those assets live in `icon/`, `banner/`, `splash/`, `audio/`, `SD/apps/` and
+> `donor/` here. **The build scripts themselves now use the repository layout**,
+> so nothing needs repointing — `build/build.sh` runs against a clean checkout
+> and reproduces the committed `.wad` byte for byte.
 >
 > **`build/build.sh` will not run as-is from a fresh clone.** Three inputs are
-> deliberately not redistributed here:
+> deliberately not redistributed here. The first two have fixed homes, so nothing
+> needs repointing — create the directories and drop the files in:
 >
-> - **FCE Ultra GX - FCEU [Tantric].wad**, the donor — get it from the
->   [FCE Ultra GX](https://github.com/dborth/fceugx) channel installer.
-> - **Benzin 2.1.12BETA**, which does the `brlyt`/`brlan` XML round-trips. It is
->   a Windows binary and runs under plain `wine`.
+> - `donor/FCE Ultra GX - FCEU [Tantric].wad`, the donor — get it from the
+>   [FCE Ultra GX](https://github.com/dborth/fceugx) channel installer. Also
+>   `donor/fceu_forwarder_content2.app`, which is that WAD's content 2 on its own;
+>   `build/tools/extract.py` writes it as `build/extracted/content2.app`, so run
+>   that first and copy it across.
+> - `build/tools/benzin/BENZIN.EXE` and its `CYGWIN1.DLL`, which do the
+>   `brlyt`/`brlan` XML round-trips. A Windows binary; runs under plain `wine`.
 > - A Python venv with Pillow + pycryptodome, plus ImageMagick and `wine`.
 >
-> Point `DONOR` in `build/tools/build_wad.py` and `extract.py`, and `BENZIN` in
-> the build scripts, at wherever you put the first two. Everything else needed
-> is in this repository.
+> Everything else needed is in this repository. Each tool resolves these paths
+> from its own file location rather than the working directory, so the scripts can
+> be run from anywhere — previously `build_wad.py` and `extract.py` disagreed
+> about where the donor lived, and neither path survived the project being moved.
 
 
 Rebuilds everything from the assets in `images/` and `audio/`, then runs the

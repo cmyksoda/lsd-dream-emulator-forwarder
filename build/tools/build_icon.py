@@ -24,8 +24,8 @@ from wiilib import U8, pack_lz77_imd5, unpack_lz77_imd5
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 BUILD = os.path.join(ROOT, "build")
-BENZIN = os.path.join(ROOT, "mGBA-GX-Channel-Forwarder-Project", "benzin")
-IMG = os.path.join(ROOT, "images", "channel", "icon")
+BENZIN = os.path.join(os.path.dirname(__file__), "benzin")
+IMG = os.path.join(ROOT, "icon")
 
 FPS = 60
 HOLD = 120          # 2.0 s fully visible

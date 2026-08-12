@@ -1,8 +1,10 @@
-import sys
-sys.path.insert(0,'tools')
+import sys, os
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
+sys.path.insert(0, HERE)
 from wiilib import *
 import tpl as T
-w=WAD.load("../mGBA-GX-Channel-Forwarder-Project/FCE Ultra GX - FCEU [Tantric].wad")
+w=WAD.load(os.path.join(ROOT, "donor", "FCE Ultra GX - FCEU [Tantric].wad"))
 app=w.contents[0]; u8=U8.load(app[app.find(b'\x55\xAA\x38\x2D'):])
 for which in ("icon","banner"):
     arc=U8.load(unpack_lz77_imd5(u8.get(f"meta/{which}.bin")))

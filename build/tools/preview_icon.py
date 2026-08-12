@@ -19,7 +19,7 @@ from wiilib import U8, unpack_lz77_imd5
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 BUILD = os.path.join(ROOT, "build")
-BENZIN = os.path.join(ROOT, "mGBA-GX-Channel-Forwarder-Project", "benzin")
+BENZIN = os.path.join(os.path.dirname(__file__), "benzin")
 STEP = 3            # sample every 3rd frame -> 20 fps preview
 PANE = (176, 96)    # the 16:9 icon pane; 4:3 shows its centre 128
 SAFE_43 = 128

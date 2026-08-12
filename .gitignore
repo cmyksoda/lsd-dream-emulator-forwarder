@@ -5,6 +5,10 @@ build/.venv/
 __pycache__/
 *.pyc
 
+# third-party inputs the build needs; see BUILDING.md for where to get them
+donor/
+build/tools/benzin/
+
 # the SD-card files that cannot be redistributed
 SD/wiisxrx/bios/*.BIN
 SD/wiisxrx/bios/*.bin

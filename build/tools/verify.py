@@ -18,7 +18,7 @@ import tpl as T
 from wiilib import U8, WAD, imd5_unwrap, imet_titles, imet_verify, unpack_lz77_imd5
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-BENZIN = os.path.join(ROOT, "mGBA-GX-Channel-Forwarder-Project", "benzin")
+BENZIN = os.path.join(os.path.dirname(__file__), "benzin")
 BANNER_BUDGET = 1388896          # FCEUGX's banner; two ~2.5MB banners freeze the Menu
 
 # HARD limit, not a budget. The System Menu compares the icon's uncompressed
@@ -251,7 +251,7 @@ def main():
     check(actual[1] <= BANNER_BUDGET, "banner within the Wii Menu memory budget",
           f"{actual[1]:,} / {BANNER_BUDGET:,} ({actual[1]/BANNER_BUDGET:.0%})")
 
-    dw = WAD.load(os.path.join(ROOT, "mGBA-GX-Channel-Forwarder-Project",
+    dw = WAD.load(os.path.join(ROOT, "donor",
                                "FCE Ultra GX - FCEU [Tantric].wad"))
     dapp = dw.contents[0]
     dono = U8.load(dapp[dapp.find(b"\x55\xAA\x38\x2D"):])
@@ -325,7 +325,7 @@ def main():
     # if meta.xml will not parse -- a raw '&' did exactly that here.
     print("\n-- apps/ meta.xml (Homebrew Channel)")
     import xml.etree.ElementTree as ET
-    meta = os.path.join(ROOT, "apps", "LSD_Dream_Emulator", "meta.xml")
+    meta = os.path.join(ROOT, "SD", "apps", "LSD_Dream_Emulator", "meta.xml")
     raw = open(meta, "rb").read()
     check(all(b < 128 for b in raw), "meta.xml is pure ASCII",
           "HBC's parser is fragile with multi-byte characters")

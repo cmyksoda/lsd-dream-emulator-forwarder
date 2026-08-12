@@ -29,10 +29,8 @@ from PIL import Image
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 BUILD = os.path.join(ROOT, "build")
-SRC_DOL = os.path.join(ROOT, "mGBA-GX-Channel-Forwarder-Project",
-                       "mGBA-GX-forwarder-working-dir", "Splash-reference",
-                       "fceu_forwarder_content2.app")
-SPLASH = os.path.join(ROOT, "images", "channel", "splash", "4_3_splash.png")
+SRC_DOL = os.path.join(ROOT, "donor", "fceu_forwarder_content2.app")
+SPLASH = os.path.join(ROOT, "splash", "4_3_splash.png")
 
 APP_DIR = "LSD_Dream_Emulator"
 DEVICE = "sd:/"          # argv[0]: where the forwarder finds WiiStation's DOL

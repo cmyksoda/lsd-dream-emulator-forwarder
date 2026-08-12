@@ -45,7 +45,7 @@ from wiilib import U8, pack_lz77_imd5, unpack_lz77_imd5
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 BUILD = os.path.join(ROOT, "build")
-BENZIN = os.path.join(ROOT, "mGBA-GX-Channel-Forwarder-Project", "benzin")
+BENZIN = os.path.join(os.path.dirname(__file__), "benzin")
 # The banner viewport is 608x456 in 4:3. The Menu renders an anamorphic 640x480
 # framebuffer, so a 16:9 TV shows 4/3 more horizontal layout units -- 810.67 --
 # while the height is unchanged. A 608-wide pane therefore gets black side bars
@@ -53,7 +53,7 @@ BENZIN = os.path.join(ROOT, "mGBA-GX-Channel-Forwarder-Project", "benzin")
 # this donor (StripePicture, TitleBarPicture) are both exactly 832 wide, i.e.
 # 810.67 rounded up to the next multiple of 64. 4:3 sees the centre 608.
 W, H = 832, 456
-SRC = os.path.join(ROOT, "images", "channel", "banner", "bg.png")
+SRC = os.path.join(ROOT, "banner", "bg.png")
 KEEP_VISIBLE = {"RootPane", "BackgroundPicture", "BarsPicture"}
 BG_TEX = "Background.tpl"
 

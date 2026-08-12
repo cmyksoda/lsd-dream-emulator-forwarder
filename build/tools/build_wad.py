@@ -16,7 +16,7 @@ from wiilib import U8, WAD, imd5_unwrap, imet_titles, imet_set, imet_verify, unp
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 BUILD = os.path.join(ROOT, "build")
-DONOR = os.path.join(ROOT, "mGBA-GX-Channel-Forwarder-Project",
+DONOR = os.path.join(ROOT, "donor",
                      "FCE Ultra GX - FCEU [Tantric].wad")
 
 TITLE_ID = "LSDE"
