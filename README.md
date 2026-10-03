@@ -150,3 +150,7 @@ Game assets are used for a non-commercial fan project and are not covered by any
 | `BUILDING.md` | how to rebuild, and what was changed in the GPL'd components |
 
 <sub><sup>The banner archive still carries 29 four-by-four stub textures named after Mario, Bowser, Princess and Toad. They are invisible, and they are there on purpose — every `txl1` entry and every `RLTP` reference in Tantric's animations has to still resolve.</sup></sub>
+
+---
+
+*This project was made with AI assistance. For more information, see [my AI usage statement](https://github.com/cmyksoda/cmyksoda/blob/main/AI_USAGE.md).*
