@@ -84,6 +84,23 @@ Use the WAD manager you installed with, or delete the channel from the Wii syste
 
 **The browser opens somewhere unexpected.** That is the tell that the forwarder passed the wrong directory. It should open in `sd:/wiisxrx/isos`.
 
+## Repository contents
+
+| path | |
+|---|---|
+| `LSD Dream Emulator - LSDE [cmyksoda].wad` | the channel — install this |
+| `SD/` | copy to the root of your SD card |
+| `icon/` | source PNGs for the icon layers, 176×96 |
+| `banner/` | source PNG for the banner, 832×456 |
+| `splash/` | forwarder loading screens — the 640×480 source, and the two de-noised PNGs actually embedded in the DOL |
+| `audio/` | source WAV for the banner sound |
+| `layout/` | `.brlyt`/`.brlan` extracted from the released WAD, plus their Benzin XML |
+| `preview/` | the icon animation as GIFs, rendered from the real keyframes |
+| `build/` | `build.sh` and the Python toolchain that rebuilds everything |
+| `BUILDING.md` | how to rebuild, and what was changed in the GPL'd components |
+
+<sub><sup>The banner archive still carries 29 four-by-four stub textures named after Mario, Bowser, Princess and Toad. They are invisible, and they are there on purpose — every `txl1` entry and every `RLTP` reference in Tantric's animations has to still resolve.</sup></sub>
+
 ## Credits
 
 ### The game
@@ -123,7 +140,7 @@ The banner and icon layouts are Tantric's, edited rather than rebuilt — every 
 
 ## License
 
-The parts of this repository that are mine — the build toolchain in `build/`, the channel art, and the documentation — are GPLv3, see [`LICENSE`](LICENSE).
+The parts of this repository that are mine — the build toolchain in `build/`, the channel art, and the documentation — are free software under the [GNU General Public License, version 3](LICENSE).
 
 This channel is built out of other people's GPL'd work, which stays under the licenses it came with:
 
@@ -133,23 +150,6 @@ This channel is built out of other people's GPL'd work, which stays under the li
 Nothing here relicenses any of that. Every change made to the FCE Ultra GX components is documented in [BUILDING.md](BUILDING.md) — that file is the GPL modification record as much as it is a build guide, and it also covers rebuilding the WAD from the assets here.
 
 Game assets are used for a non-commercial fan project and are not covered by any of the above; they remain the property of their owners.
-
-## Repository contents
-
-| path | |
-|---|---|
-| `LSD Dream Emulator - LSDE [cmyksoda].wad` | the channel — install this |
-| `SD/` | copy to the root of your SD card |
-| `icon/` | source PNGs for the icon layers, 176×96 |
-| `banner/` | source PNG for the banner, 832×456 |
-| `splash/` | forwarder loading screens — the 640×480 source, and the two de-noised PNGs actually embedded in the DOL |
-| `audio/` | source WAV for the banner sound |
-| `layout/` | `.brlyt`/`.brlan` extracted from the released WAD, plus their Benzin XML |
-| `preview/` | the icon animation as GIFs, rendered from the real keyframes |
-| `build/` | `build.sh` and the Python toolchain that rebuilds everything |
-| `BUILDING.md` | how to rebuild, and what was changed in the GPL'd components |
-
-<sub><sup>The banner archive still carries 29 four-by-four stub textures named after Mario, Bowser, Princess and Toad. They are invisible, and they are there on purpose — every `txl1` entry and every `RLTP` reference in Tantric's animations has to still resolve.</sup></sub>
 
 ---
 
