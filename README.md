@@ -140,7 +140,7 @@ The banner and icon layouts are Tantric's, edited rather than rebuilt — every 
 
 ## License
 
-The parts of this repository that are mine — the build toolchain in `build/`, the channel art, and the documentation — are free software under the [GNU General Public License, version 3](LICENSE).
+The parts of this repository that are mine — the build toolchain in `build/`, the channel art, and the documentation — are free software under the [GNU General Public License, version 3 or later](LICENSE).
 
 This channel is built out of other people's GPL'd work, which stays under the licenses it came with:
 
